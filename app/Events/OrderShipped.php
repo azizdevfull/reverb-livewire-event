@@ -14,10 +14,8 @@ class OrderShipped implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    /**
-     * Create a new event instance.
-     */
-    public function __construct(public int $order_id = 1)
+
+    public function __construct(public int $orderId = 1)
     {
         //
     }

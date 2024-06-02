@@ -2,8 +2,8 @@
 
 namespace App\Livewire;
 
-use Livewire\Attributes\On;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class Dashboard extends Component
 {
@@ -15,7 +15,6 @@ class Dashboard extends Component
     #[On('echo:dashboard,OrderShipped')]
     public function dump($payload)
     {
-
+        dd($payload);
     }
-
 }
